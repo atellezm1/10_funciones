@@ -1,8 +1,11 @@
 //Alezande Jesús Téllez
 #include<iostream>
 using namespace std;
+void depositar(float monto);
+float saldo=0;
 int main(){
     int op;
+    float valor;
     cout<<"cajero automatico"<<endl;
     cout<<"1.depositar "<<endl;
     cout<<"2.retirar "<<endl;
@@ -10,12 +13,27 @@ int main(){
     cout<<"0.salir "<<endl;
     cout<<"elija una opcion:\n ";cin>>op;
     switch(op){
+        case 1:
+            cout<<"ingrese el valor a depositar:";cin>>valor;
+            depositar(valor);
         case 0:
-        cout<<"saliendo...."<<endl;
-        system("pause");
+            cout<<"saliendo...."<<endl;
+            system("pause");
         break;
 
     }
 
     return 0;
+}
+void depositar(float monto){
+    int saldo;
+    saldo=saldo+monto;
+}
+void retirar(float monto){
+    int saldo;
+    saldo=saldo-monto;
+}
+void mostrarsaldo(){
+    float saldo;
+    cout<<"el saldo actual es:\n"<<saldo<<"\n";
 }
