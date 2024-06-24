@@ -1,8 +1,11 @@
 //Alezande Jesús Téllez
 #include<iostream>
 using namespace std;
-void depositar(float monto);
-float saldo=0;
+void depositar(float );
+void retirar(float);
+void mostrarsaldo();
+float saldo;
+
 int main(){
     int op;
     float valor;
@@ -19,11 +22,11 @@ int main(){
             system("pause");
         break;
         case 2:
-            cout<<"ingrese el valor a retirar:\n";cin>>valor;
+            cout<<"ingrese el valor a retirar:";cin>>valor;
             retirar(valor);
         break;
         case 3:
-            cout<<"elsaldo es:\n";mostrarsaldo();
+            mostrarsaldo();
         break;
         case 0:
             cout<<"saliendo...."<<endl;
@@ -43,6 +46,5 @@ void retirar(float monto){
     saldo=saldo-monto;
 }
 void mostrarsaldo(){
-    float saldo;
     cout<<"el saldo actual es:\n"<<saldo<<"\n";
 }
