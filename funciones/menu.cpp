@@ -16,6 +16,12 @@ int main(){
         case 1:
             cout<<"ingrese el valor a depositar:";cin>>valor;
             depositar(valor);
+            system("pause");
+        break;
+        case 2:
+          cout<<"ingrese el valor a retirar:\n";cin>>valor;
+            retirar(valor);
+        break;       
         case 0:
             cout<<"saliendo...."<<endl;
             system("pause");
