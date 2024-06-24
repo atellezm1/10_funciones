@@ -19,9 +19,12 @@ int main(){
             system("pause");
         break;
         case 2:
-          cout<<"ingrese el valor a retirar:\n";cin>>valor;
+            cout<<"ingrese el valor a retirar:\n";cin>>valor;
             retirar(valor);
-        break;       
+        break;
+        case 3:
+            cout<<"elsaldo es:\n";mostrarsaldo();
+        break;
         case 0:
             cout<<"saliendo...."<<endl;
             system("pause");
