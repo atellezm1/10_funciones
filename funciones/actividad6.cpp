@@ -83,7 +83,7 @@ int main(){
     }
     else{
     	cout<<endl;
-        cout<<"---PERDISTE EL JUEGO---"<<endl;
+        cout<<"----PERDISTE EL JUEGO----"<<endl;
     }
     
     return 0;
